@@ -119,7 +119,7 @@ Relationships:
     * Course (1) ----&lt; BelongsTo >---- (1) Department
   
 
-
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment2/assignment2/ConceptualERD.drawio.png)
 
 
 ### Logical ERD:
@@ -173,7 +173,7 @@ Relationships with Cardinality:
 7. Includes (DegreeSpecific):
     * DegreeSpecificRequirement (1) ----&lt; Includes >---- (*) Course
 
-
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment2/assignment2/Logical.drawio.png)
 
 
 ### Physical ERD:
@@ -211,6 +211,6 @@ Example Foreign Keys:
 * Includes (DegreeSpecificReqID-FK, CourseID-FK)
 * BelongsTo (CourseID-FK, DepartmentID-FK)
 
-    
+  ![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment2/assignment2/physical.drawio.png)
 
 
