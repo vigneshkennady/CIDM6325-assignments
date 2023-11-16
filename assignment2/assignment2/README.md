@@ -213,4 +213,8 @@ Example Foreign Keys:
 
   ![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment2/assignment2/physical.drawio.png)
 
+### Use the Django Admin to populate a few instances of your models
 
+##### Required models are built and the Django admin as shown below is up
+
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment2/assignment2/Django_admin_degree_checklst.png)
