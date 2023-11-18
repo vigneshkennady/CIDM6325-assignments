@@ -16,18 +16,21 @@ I am working with a Django project and has a form for
 5. python manage.py runserver
 
 ## Instruction for Django admin 
-Admin is accessible using http://127.0.0.1:8000/admin/ and all the required models are available as shown below
+### Admin is accessible using http://127.0.0.1:8000/admin/ and all the required models are available as shown below
 
 ![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
 
-user facing forms to create new program is working as highlighted below using http://127.0.0.1:8000/degree_checklist/create_degree_program/
+#### user facing forms to create new program is working as highlighted below using http://127.0.0.1:8000/degree_checklist/create_degree_program/
 
-![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2010.59.25%E2%80%AFPM.png)
 
-![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2011.00.07%E2%80%AFPM.png)
 
-user facing forms to create new course is working as highlighted below using http://127.0.0.1:8000/degree_checklist/create_course/
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2011.00.15%E2%80%AFPM.png)
 
-![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
+####  user facing forms to create new course is working as highlighted below using http://127.0.0.1:8000/degree_checklist/create_course/
 
-![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2010.51.12%E2%80%AFPM.png)
+
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2010.51.28%E2%80%AFPM.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment5/assignment2/images/Screenshot%202023-11-17%20at%2010.51.35%E2%80%AFPM.png)
