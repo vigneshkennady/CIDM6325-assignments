@@ -46,21 +46,29 @@ Templates included dynamic titles, sorting links, and lists of model instances.
 ## Instruction for Django admin 
 Admin is accessible using http://127.0.0.1:8000/admin/ and all the required models are available as shown below
 
-![Image] (https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/Django_admin_degree_checklst.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.57.56%E2%80%AFPM.png)
 
 Using Django admin records are loaded as highlighted below
 
 For example - degreeProgram are added using DJangoadmin as highlighted below
 
-![Image] (https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/Django_admin_degree_checklst.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.58.35%E2%80%AFPM.png)
+
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.58.49%E2%80%AFPM.png)
 
 All the models are loaded with sample data as highlighted below
-
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.58.49%E2%80%AFPM.png)
 
 Model_list view has been created to view the degree program list and course list as highlighted below
 
+
 #### Degree program list view
-![Image] (https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/Django_admin_degree_checklst.png)
+
+http://127.0.0.1:8000/degree_checklist/degree_program_list/
+
+![Image]('https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.59.49%E2%80%AFPM.png')
+
+
 
 #### course list view
-![Image] (https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/Django_admin_degree_checklst.png)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%2010.00.02%E2%80%AFPM.png)
