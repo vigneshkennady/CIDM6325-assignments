@@ -66,7 +66,7 @@ Model_list view has been created to view the degree program list and course list
 
 http://127.0.0.1:8000/degree_checklist/degree_program_list/
 
-![Image]('https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.59.49%E2%80%AFPM.png')
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment3/assignment2/images/Screenshot%202023-11-17%20at%209.59.49%E2%80%AFPM.png)
 
 
 
