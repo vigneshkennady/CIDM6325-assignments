@@ -1,0 +1,16 @@
+<!-- degree_program_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Degree Program List</h2>
+    {% if degree_programs %}
+        <ul>
+            {% for degree_program in degree_programs %}
+                <li>{{ degree_program.ProgramName }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No degree programs available.</p>
+    {% endif %}
+{% endblock %}
