@@ -1,0 +1,28 @@
+<!-- degree_checklist/templates/course_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses List</title>
+</head>
+<body>
+
+    <h2>Courses List</h2>
+
+    <p>Sort by:
+        <a href="?sort=CourseName">CourseName</a> |
+        <a href="?sort=CourseID">CourseID</a> |
+        <a href="?sort=Credits">Credits</a> |
+        <a href="?sort=Department">Department</a> |
+        <!-- Add links for other columns as needed -->
+    </p>
+
+    <ul>
+        {% for course in courses %}
+            <li>{{ course.Department }}-{{ course.CourseName }} - {{ course.CourseID }}-{{ course.Credits }}</li>
+            <!-- Display other fields as needed -->
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

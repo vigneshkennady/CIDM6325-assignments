@@ -1,0 +1,21 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Curriculum System{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Include header content here -->
+        <h1>My Curriculum System</h1>
+    </header>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <!-- Include footer content here -->
+        <p>&copy; 2023 My Curriculum System</p>
+    </footer>
+</body>
+</html>
