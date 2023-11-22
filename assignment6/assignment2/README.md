@@ -33,37 +33,37 @@ A key feature of this project is the integration of the django-import-export lib
 
 #### Getting Started
 1. Clone the repository to your local machine.
-
-
 `git clone https://github.com/your-username/degree-checklist.git`
 2. Install dependencies.
-pip install -r requirements.txt
+`pip install -r requirements.`
 3. Apply migrations.
 
 
-python manage.py migrate
+`python manage.py migrate`
 4. Create a superuser account.
 
 
-python manage.py createsuperuser
+`python manage.py createsuperuser`
 5. Run the development server.
 
 
-python manage.py runserver
+`python manage.py runserver`
 
 Access the admin interface at http://127.0.0.1:8000/admin/ and log in with the superuser credentials.
 
-Explore the Degree Programs section to utilize the import and export functionality as highlighted below
+### Explore the Degree Programs section to utilize the import and export functionality as highlighted below
 
-as part of this project, DegreeProgram model is exposed to import and export functionality
+As part of this project, DegreeProgram model is exposed to import and export functionality
 
 - Open admin interface and click Degreeprogram model which pops up import & export functionality on the top of interface as highlighted below
-![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot1.png
+
+![image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot1.png)
+
 - Select the file which need to imported as highlighted below
-![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot2.png
+![image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot2.png)
 
 - Import the file successfully as highlighted
-![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot3.png
-![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot4.png
+![image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot3.png)
+![image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot4.png)
 
 
