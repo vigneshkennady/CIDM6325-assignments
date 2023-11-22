@@ -55,3 +55,15 @@ Access the admin interface at http://127.0.0.1:8000/admin/ and log in with the s
 
 Explore the Degree Programs section to utilize the import and export functionality as highlighted below
 
+as part of this project, DegreeProgram model is exposed to import and export functionality
+
+- Open admin interface and click Degreeprogram model which pops up import & export functionality on the top of interface as highlighted below
+![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot1.png
+- Select the file which need to imported as highlighted below
+![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot2.png
+
+- Import the file successfully as highlighted
+![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot3.png
+![image]https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/assignment6/assignment2/images/Screenshot4.png
+
+
