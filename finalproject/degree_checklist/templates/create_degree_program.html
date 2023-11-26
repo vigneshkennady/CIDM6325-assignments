@@ -1,0 +1,12 @@
+<!-- create_degree_program.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Create a New Degree Program</h2>
+  <form method="post" action="{% url 'create_degree_program' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Create Degree Program</button>
+  </form>
+{% endblock %}

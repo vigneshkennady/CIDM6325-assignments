@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Detail</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Name : {{ student.FirstName|title }} {{ student.LastName|title }} </h2>
+    <h2>StudentID : {{ student.StudentID }} </h2>
+
+    <h3>Enrollments Details</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Degree Program</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for enrollment in enrollments %}
+            <tr>
+                <td>{{ enrollment.degree_program.Department.DepartmentName }}</td>
+                <td>{{ enrollment.degree_program.ProgramName }}</td>
+                <td>
+                    <ul>
+                        {% for course in enrollment.degree_program.courses.all %}
+                        <li>{{ course.CourseName }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html> -->
+
+{% load custom_filters %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Detail</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>{{ student.FirstName|title }} {{ student.LastName|title }} - Enrollments</h2>
+
+    <h3>Enrollments:</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Degree Program</th>
+                <th>Courses-CourseCredit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for enrollment in enrollments %}
+            <tr>
+                <td>{{ enrollment.degree_program.Department.DepartmentName }}</td>
+                <td>{{ enrollment.degree_program.ProgramName }}</td>
+                <td>
+                    <ul>
+                        {% for course in enrollment.degree_program.courses.all %}
+                        <li>{{ course.CourseName }} - {{ course.Credits }} credits</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+
+</html>
