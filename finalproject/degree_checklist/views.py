@@ -121,3 +121,8 @@ class DegreeDetailView(APIView):
         degree = DegreeProgram.objects.get(ProgramID=program_id)
         serializer = DegreeProgramSerializer(degree)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+
+def admin_interface(request):
+    degree_programs = DegreeProgram.objects.all()
+    return render(request, 'admin_template.html', {'degree_programs': degree_programs})

@@ -3,15 +3,31 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- create_course.html -->
+<div class="card">
+    <div class="card-body">
+        <h1 class="card-title">Welcome to the Admin Interface</h1>
+        <p class="card-text">Total Degree Programs: {{ degree_programs.count }}</p>
 
-{% extends 'base.html' %}
+        <script>
+            document.getElementById('alertButton').addEventListener('click', function() {
+                alert('Button Clicked!');
+            });
+        </script>
+    </div>
+</div>
+
 
 {% block content %}
   <h2>Create a New Course</h2>
   <form method="post" action="{% url 'create_course' %}">
       {% csrf_token %}
       {{ form.as_p }}
+
+      <!-- Add a class to the button for styling -->
       <button type="submit" class="btn btn-primary">Create Course</button>
   </form>
 {% endblock %}
+
+
+
+
