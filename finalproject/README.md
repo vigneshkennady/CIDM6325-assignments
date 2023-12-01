@@ -137,14 +137,15 @@ Screenshot:
 ### Prerequisites
 
 1. Using AWS console, created an AWS EC2 instance as highlighted below
-2. An AWS EC2 instance with an appropriate security group and port configurations.
-3. Django project hosted on GitHub (https://github.com/vigneshkennady/CIDM6325-assignments/tree/main/finalproject)
+   ![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot15.jpg)
+3. An AWS EC2 instance with an appropriate security group and port configurations.
+4. Django project hosted on GitHub (https://github.com/vigneshkennady/CIDM6325-assignments/tree/main/finalproject)
 
 ### Step 1: Connect to Your EC2 Instance
 SSH into your EC2 instance:
 
 ``` bash
-ssh -i your-key.pem ec2-user@your-ec2-public-ip
+ssh -i your-key.pem ec2-user@ 18.119.142.76
 ```
 
 ###  Step 2: Clone the Django Project
