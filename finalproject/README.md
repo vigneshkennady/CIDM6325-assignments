@@ -99,28 +99,28 @@ The application provides interfaces for administrators, faculty, and students. H
 Manage degree programs, courses, departments, and student enrollments.
 URL: http://127.0.0.1:8000/degree_checklist/create_degree_program/
 Screenshot:
-![Image](screenshot1.jpg)
-![Image](screenshot2.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot1.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot2.jpg)
 
 URL: http://127.0.0.1:8000/degree_checklist/create_degree_program/
 Screenshot:
-![Image](screenshot3.jpg)
-![Image](screenshot4.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot3.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot4.jpg)
 
 ### Faculty Interface: 
 Access and update course information, view student enrollments.
 URL: http://127.0.0.1:8000/degree_checklist/course_list/
-![Image](screenshot6.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot6.jpg)
 UR:http://127.0.0.1:8000/degree_checklist/degree_program_list/
-![Image](screenshot5.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot5.jpg)
 URL:http://127.0.0.1:8000/degree_checklist/degree_detail/1/
-![Image](screenshot7.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot7.jpg)
 
 ### Student Interface: 
 View degree program details, enrolled courses, and academic requirements.
 URL:http://127.0.0.1:8000/degree_checklist/students/1/
 
-![Image](screenshot8.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot8.jpg)
 
 ### API Endpoints
 The application provides API endpoints for external integration. 
@@ -128,7 +128,7 @@ Here are some key endpoints:
 /api/degree/<program_id>/: Retrieve details about a specific degree program.
 
 Screenshot:
-![Image](screenshot9.jpg)
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot9.jpg)
 
 ## Testing
 The project includes test cases for essential models. To run the tests, use the following command:
