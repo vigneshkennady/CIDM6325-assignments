@@ -7,10 +7,10 @@ Project Description: Degree Checklist Management System
 4. [Installation](#Installation)
 5. [Running the Application](#Running-the-Application)
 6. [Usage](#Usage)
-7. [Testing](#Testing)
-8. [Code Quality](#Code-Quality)
-
-
+7. [Deploying Django App on AWS EC2](#Deploying-Django-App-on-AWS-EC2)
+8. [Testing](#Testing)
+9. [Code Quality](#Code-Quality)
+ 
 
 ## Introduction
 
@@ -130,6 +130,111 @@ Here are some key endpoints:
 Screenshot:
 ![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot9.jpg)
 
+
+
+## Deploying Django App on AWS EC2
+
+### Prerequisites
+
+1. Using AWS console, created an AWS EC2 instance as highlighted below
+2. An AWS EC2 instance with an appropriate security group and port configurations.
+3. Django project hosted on GitHub (https://github.com/vigneshkennady/CIDM6325-assignments/tree/main/finalproject)
+
+### Step 1: Connect to Your EC2 Instance
+SSH into your EC2 instance:
+
+``` bash
+ssh -i your-key.pem ec2-user@your-ec2-public-ip
+```
+
+###  Step 2: Clone the Django Project
+Clone your Django project from GitHub:
+
+``` bash
+git clone https://github.com/vigneshkennady/CIDM6325-assignments
+```
+###  Step 3: Install Dependencies
+
+Navigate to your project directory and install Python dependencies:
+
+``` bash
+cd /home/ec2-user/app/CIDM6325-assignments
+pip install -r requirements.txt
+```
+###  Step 4: Configure Django Settings
+Update Django settings for production. Modify the settings.py file:
+
+``` bash
+# settings.py
+
+DEBUG = False
+ALLOWED_HOSTS = ["18.119.142.76","cidm6325assignment.com"]
+```
+
+
+### Step 5: Collect Static Files
+Collect static files into a designated directory:
+
+``` bash
+python manage.py collectstatic
+```
+### Step 6: Run Migrations
+Run Django database migrations:
+
+``` bash
+python manage.py migrate
+```
+
+###  Step 7: Run Gunicorn
+Run Gunicorn to serve the application:
+
+``` bash
+gunicorn finalProject.wsgi:application --bind 0.0.0.0:8000
+```
+
+###   Step 8: Set Up Nginx 
+Set up Nginx as a reverse proxy for Gunicorn:
+
+``` bash
+sudo yum install nginx
+sudo nano /etc/nginx/nginx.conf
+Add the following to the server block:
+
+nginx
+Copy code
+location / {
+    proxy_pass http://127.0.0.1:8000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+
+?Restart Nginx:
+
+sudo service nginx restart
+```
+
+### Step 9: Access Your Django App
+Open your web browser and navigate to http://18.119.142.76:8000/admin/
+
+### Evidence:
+Below evidence shows that the application is succesfully deployed on EC2 and accessible through internet
+
+Admin UI 
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot10.jpg)
+EC2 log of Admin UI login:
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot11.jpg)
+
+Creating degree program
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot12.jpg)
+
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot13.jpg)
+
+Ec2 log of activities
+
+![Image](https://github.com/vigneshkennady/CIDM6325-assignments/blob/main/finalproject/images/screenshot14.jpg)
+
 ## Testing
 The project includes test cases for essential models. To run the tests, use the following command:
 
@@ -146,3 +251,4 @@ We have plans to enhance the application with the following features:
 Automated notifications for degree progress.
 Integration with learning management systems.
 Enhanced reporting capabilities.
+
