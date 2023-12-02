@@ -1,4 +1,4 @@
-Project Description: Degree Checklist Management System
+# Degree Checklist Management System
 
 ## Table of Contents
 1. [Introduction](#Introduction)
